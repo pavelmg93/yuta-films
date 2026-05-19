@@ -1,0 +1,1 @@
+export const ParsedItemSchema = z.object({ item: z.string().min(1), altNames: z.string().optional(), qty: z.union([z.number(), z.string()]), category: z.string(), tags: z.array(z.string()).default([]), comment: z.string().optional(), photoReqd: z.boolean().default(false), });

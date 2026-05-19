@@ -1,0 +1,1 @@
+export function extractJson(raw) { return raw .replace(/```json/g, "") .replace(/```/g, "") .trim(); }

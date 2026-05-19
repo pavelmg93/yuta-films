@@ -1,0 +1,1 @@
+export function normalizeParsedItem(raw) { return { item: raw.item?.trim() || "New Item", altNames: raw.altNames || "", qty: Number(raw.qty) || 1, category: raw.category || "HERO PROPS", tags: Array.isArray(raw.tags) ? raw.tags.filter(Boolean) : [], comment: raw.comment || "", photoReqd: Boolean(raw.photoReqd), }; }
